@@ -20,9 +20,9 @@ public class Thrust : MonoBehaviour
         {
 
          
-            rb.velocity = -Vector3.forward * velocity;
+           
 
-            rb.AddForce((transform.forward * -1) * dash);
+            rb.AddForce((transform.forward * 1) * dash);
            
         }
     }
