@@ -29,10 +29,7 @@ public class Countdowntimer : MonoBehaviour
        
 
     }
-   public void Deduct(float time)
-    {
-        currentTime -= time * Time.deltaTime;
-    }
+   
 
 
 }
