@@ -44,7 +44,7 @@ public class Guard : MonoBehaviour
 		{
 			spotlight.color = Color.red;
 			countdown.Deduct(5);
-			
+			Debug.Log("is it working");
 
 
 

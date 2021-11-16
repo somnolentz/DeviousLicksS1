@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TopDownCam : MonoBehaviour
+public class topDownCam : MonoBehaviour
 {
     public Transform player;
 
@@ -28,5 +28,4 @@ public class TopDownCam : MonoBehaviour
 
         transform.position = Vector3.SmoothDamp(transform.position, pos, ref velocity, smooth);
     }
-
 }
