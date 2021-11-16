@@ -9,6 +9,8 @@ public class Countdowntimer : MonoBehaviour
     public float startingTime = 180f;
     public float timeLeft;
     public Text countdownText;
+    public gamemanager gameManager;
+
     void Start()
     {
        currentTime = startingTime;
@@ -18,15 +20,17 @@ public class Countdowntimer : MonoBehaviour
     void Update()
     {
         currentTime -= 1 * Time.deltaTime;
-        countdownText.text = currentTime.ToString("0");
+        
 
         if (currentTime <=0)
         {
 
             currentTime = 0;
+            Debug.Log("fuck");
+            gameManager.gameOver();
            
         }
-       
+        countdownText.text = currentTime.ToString("0");
 
     }
     public void Deduct(float time)
@@ -34,6 +38,6 @@ public class Countdowntimer : MonoBehaviour
         currentTime -= time * Time.deltaTime;
     }
    
-
+    
 
 }
