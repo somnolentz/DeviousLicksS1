@@ -18,12 +18,14 @@ public class Guard : MonoBehaviour
 	public Transform pathHolder;
 	Transform player;
 	Color originalSpotlightColour;
+	private Countdowntimer countdown;
 
 	void Start()
 	{
 		player = GameObject.FindGameObjectWithTag("Player").transform;
 		viewAngle = spotlight.spotAngle;
 		originalSpotlightColour = spotlight.color;
+		countdown = GameObject.FindObjectOfType<Countdowntimer>();
 
 		Vector3[] waypoints = new Vector3[pathHolder.childCount];
 		for (int i = 0; i < waypoints.Length; i++)
@@ -41,7 +43,7 @@ public class Guard : MonoBehaviour
 		if (CanSeePlayer())
 		{
 			spotlight.color = Color.red;
-			
+			countdown.Deduct(5);
 
 
 
