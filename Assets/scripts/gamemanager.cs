@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class gamemanager : MonoBehaviour
 {
     public GameObject gameOverCanvas;
+    public GameObject portalOpenCanvas;
     private void Start()
     {
         Time.timeScale = 1;
