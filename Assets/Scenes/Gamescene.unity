@@ -7293,6 +7293,8 @@ GameObject:
   - component: {fileID: 1490453261}
   - component: {fileID: 1490453260}
   - component: {fileID: 1490453266}
+  - component: {fileID: 1490453267}
+  - component: {fileID: 1490453268}
   m_Layer: 8
   m_Name: player
   m_TagString: Player
@@ -7426,6 +7428,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dash: 5
   velocity: 1
+--- !u!114 &1490453267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1490453259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20ab151ebf209c2469bf351455edbbe9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boostingTime: 5
+  boostingSpeed: 100
+  boostTimer: 0
+  isBoosting: 0
+--- !u!114 &1490453268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1490453259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf4501233a6c1c44c801f274573a0293, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stunTime: 5
+  stunTimer: 0
+  stunRadias: 100
+  isStun: 0
 --- !u!1 &1502257933
 GameObject:
   m_ObjectHideFlags: 0
