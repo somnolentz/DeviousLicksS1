@@ -22,7 +22,7 @@ public class Thrust : MonoBehaviour
          
            
 
-            rb.AddForce((transform.forward * 1) * dash);
+            rb.AddForce((transform.forward * 1) * dash, ForceMode.VelocityChange);
            
         }
     }

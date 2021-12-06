@@ -5,10 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/Troy.unity
-    guid: 90813f0dcc4bae34998226fde978acf9
+    path: Assets/Scenes/Menu.unity
+    guid: b0c5e1e22a988184e9228315b900cc76
+  - enabled: 1
+    path: Assets/Scenes/Gamescene.unity
+    guid: 39d5bd4aa5dd21c4a9223b234975bc56
   m_configObjects: {}

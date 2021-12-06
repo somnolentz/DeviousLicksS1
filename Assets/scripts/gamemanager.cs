@@ -6,12 +6,13 @@ using UnityEngine.SceneManagement;
 public class gamemanager : MonoBehaviour
 {
     public GameObject gameOverCanvas;
-    public GameObject portalOpenCanvas;
+    public GameObject portal;
+    public string scene;
     private void Start()
     {
         Time.timeScale = 1;
         gameOverCanvas.SetActive(false);
-
+        portal.SetActive(false);
 
     }
 
@@ -25,9 +26,15 @@ public class gamemanager : MonoBehaviour
     public void Replay()
     {
 
-        SceneManager.LoadScene("Troy");
+        SceneManager.LoadScene(scene);
     }
-  
+    public void openPortal()
+    {
+        portal.SetActive(true);
+        
+
+
+    }
 
 
 }
