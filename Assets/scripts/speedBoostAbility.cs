@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class speedBoostAbility : MonoBehaviour
 {
     public float boostingTime = 3;
@@ -12,11 +13,13 @@ public class speedBoostAbility : MonoBehaviour
     public bool isBoosting = false;
     private float intialSpeed;
     private Thrust player;
+    public GameObject text;
 
     Rigidbody rb;
 
     void Start()
     {
+        text.SetActive(false);
         rb = GetComponentInParent<Rigidbody>();
         player = GetComponentInParent<Thrust>();
     }
@@ -30,12 +33,14 @@ public class speedBoostAbility : MonoBehaviour
                 player.dash = intialSpeed;
                 boostTimer = 0;
                 isBoosting = false;
+                text.SetActive(false);
 
             }
         }
     }
     public void Activate()
     {
+        text.SetActive(true);
         intialSpeed = player.dash;
         player.dash = boostingSpeed;
         isBoosting = true;
