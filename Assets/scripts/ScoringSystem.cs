@@ -14,7 +14,7 @@ public class ScoringSystem : MonoBehaviour
     void Update()
     {
         scoreText.GetComponent<Text>().text = "SCORE:" + theScore;
-        if (theScore == 3)
+        if (theScore == 6)
         {
             FindObjectOfType<gamemanager>().openPortal();
 

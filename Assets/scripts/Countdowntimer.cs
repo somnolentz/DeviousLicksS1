@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,10 +7,17 @@ using UnityEngine.UI;
 public class Countdowntimer : MonoBehaviour
 {
    public float currentTime = 0f;
-    public float startingTime = 180f;
+    public float startingTime = 220f;
     public float timeLeft;
+
+    internal void AddTime()
+    {
+        throw new NotImplementedException();
+    }
+
     public Text countdownText;
     public gamemanager gameManager;
+    public float TimeAdded = 15f;
 
     void Start()
     {
@@ -26,7 +34,7 @@ public class Countdowntimer : MonoBehaviour
         {
 
             currentTime = 0;
-            Debug.Log("fuck");
+           
             gameManager.gameOver();
            
         }
@@ -37,7 +45,14 @@ public class Countdowntimer : MonoBehaviour
     {
         currentTime -= time * Time.deltaTime;
     }
-   
+
+   public void AddTime(float increase)
+    {
+
+        currentTime += increase;
+
+    }
+
     
 
 }
