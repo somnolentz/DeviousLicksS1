@@ -19,26 +19,38 @@ public class Guard : MonoBehaviour
 	Transform player;
 	Color originalSpotlightColour;
 	private Countdowntimer countdown;
+    Vector3[] waypoints;
+    int targetWaypointIndex = 1;
 
-	void Start()
+    void Start()
 	{
-		player = GameObject.FindGameObjectWithTag("Player").transform;
-		viewAngle = spotlight.spotAngle;
-		originalSpotlightColour = spotlight.color;
-		countdown = GameObject.FindObjectOfType<Countdowntimer>();
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+        viewAngle = spotlight.spotAngle;
+        originalSpotlightColour = spotlight.color;
+        countdown = GameObject.FindObjectOfType<Countdowntimer>();
 
-		Vector3[] waypoints = new Vector3[pathHolder.childCount];
-		for (int i = 0; i < waypoints.Length; i++)
-		{
-			waypoints[i] = pathHolder.GetChild(i).position;
-			waypoints[i] = new Vector3(waypoints[i].x, transform.position.y, waypoints[i].z);
-		}
+        waypoints = new Vector3[pathHolder.childCount];
+        for (int i = 0; i < waypoints.Length; i++)
+        {
+            waypoints[i] = pathHolder.GetChild(i).position;
+            waypoints[i] = new Vector3(waypoints[i].x, transform.position.y, waypoints[i].z);
+        }
+        transform.position = waypoints[0];
+        Debug.Log("Initialized");
 
-		StartCoroutine(FollowPath(waypoints));
+    }
+    public void OnDisable()
+    {
+        StopAllCoroutines();
 
-	}
+    }
+    public void OnEnable()
+    {
 
-	void Update()
+        StartCoroutine(FollowPath());
+
+    }
+    void Update()
 	{
 		if (CanSeePlayer())
 		{
@@ -73,12 +85,10 @@ public class Guard : MonoBehaviour
 		return false;
 	}
 
-	IEnumerator FollowPath(Vector3[] waypoints)
+	IEnumerator FollowPath()
 	{
-		transform.position = waypoints[0];
-
-		int targetWaypointIndex = 1;
-		Vector3 targetWaypoint = waypoints[targetWaypointIndex];
+        yield return null;
+        Vector3 targetWaypoint = waypoints[targetWaypointIndex];
 		transform.LookAt(targetWaypoint);
 
 		while (true)
@@ -124,11 +134,6 @@ public class Guard : MonoBehaviour
 		Gizmos.color = Color.red;
 		Gizmos.DrawRay(transform.position, transform.forward * viewDistance);
 	}
-
-
-
-
-
 
 }
 

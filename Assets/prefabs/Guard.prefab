@@ -11,8 +11,7 @@ GameObject:
   - component: {fileID: 5045829710083507982}
   - component: {fileID: 5984383501124266992}
   - component: {fileID: 382810294197366780}
-  - component: {fileID: 301231724132215862}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: wings 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82,19 +81,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &301231724132215862
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1071558837913930668}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0.0000009536743}
 --- !u!1 &5903204975706349954
 GameObject:
   m_ObjectHideFlags: 0
@@ -106,8 +92,7 @@ GameObject:
   - component: {fileID: 2866729481564200265}
   - component: {fileID: 7905367943812377031}
   - component: {fileID: 5711256661738460504}
-  - component: {fileID: 7054665103763146018}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: wings 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,19 +162,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &7054665103763146018
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5903204975706349954}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0.0000009536743}
 --- !u!1 &5986621166175727908
 GameObject:
   m_ObjectHideFlags: 0
@@ -201,8 +173,7 @@ GameObject:
   - component: {fileID: 435300454324373004}
   - component: {fileID: 248285108056961190}
   - component: {fileID: 5865110125913690323}
-  - component: {fileID: 2661598962815247900}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -272,19 +243,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &2661598962815247900
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5986621166175727908}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0.0000009536743}
 --- !u!1 &6153358171144331169
 GameObject:
   m_ObjectHideFlags: 0
@@ -296,8 +254,7 @@ GameObject:
   - component: {fileID: 4057531930257002204}
   - component: {fileID: 732862593671533398}
   - component: {fileID: 2703920564349766639}
-  - component: {fileID: 3834981772089937480}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: wings 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -367,19 +324,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &3834981772089937480
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6153358171144331169}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0.0000009536743}
 --- !u!1 &7014417722902477398
 GameObject:
   m_ObjectHideFlags: 0
@@ -391,8 +335,7 @@ GameObject:
   - component: {fileID: 8541284105907326868}
   - component: {fileID: 2489670508965381358}
   - component: {fileID: 2700812887446813526}
-  - component: {fileID: 3703742686157370991}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: wings 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -462,19 +405,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &3703742686157370991
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7014417722902477398}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0.0000009536743}
 --- !u!1 &7762252984410917363
 GameObject:
   m_ObjectHideFlags: 0
@@ -489,7 +419,7 @@ GameObject:
   - component: {fileID: 7762252984410917361}
   - component: {fileID: 7762252984410917360}
   - component: {fileID: 7762252984410917365}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Guard
   m_TagString: Guard
   m_Icon: {fileID: 0}
@@ -627,7 +557,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7762252986089229384}
   - component: {fileID: 7762252986089229385}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Spot Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -721,8 +651,7 @@ GameObject:
   - component: {fileID: 4981358677274364663}
   - component: {fileID: 3172942187156542139}
   - component: {fileID: 8720465234928108808}
-  - component: {fileID: 8365639463197648950}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -792,17 +721,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &8365639463197648950
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8514184142648279675}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: 0.00000086426735}

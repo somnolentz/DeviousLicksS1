@@ -12,7 +12,8 @@ public class gamemanager : MonoBehaviour
     {
         Time.timeScale = 1;
         gameOverCanvas.SetActive(false);
-        portal.SetActive(false);
+        
+        portal?.SetActive(false);
 
     }
 

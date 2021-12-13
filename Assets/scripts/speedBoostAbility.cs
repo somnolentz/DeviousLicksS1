@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class speedBoostAbility : MonoBehaviour
+public class speedBoostAbility : MonoBehaviour,IAbility
 {
     public float boostingTime = 3;
     public float boostingSpeed = 10;
@@ -39,5 +39,10 @@ public class speedBoostAbility : MonoBehaviour
         intialSpeed = player.dash;
         player.dash = boostingSpeed;
         isBoosting = true;
+    }
+
+    public void Deactivate()
+    {
+        throw new System.NotImplementedException();
     }
 }
