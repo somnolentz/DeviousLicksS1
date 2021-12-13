@@ -14,8 +14,9 @@ GameObject:
   - component: {fileID: 3003261949379135288}
   - component: {fileID: 1384189205417048248}
   - component: {fileID: 3299251034245673557}
+  - component: {fileID: 1016126434271455230}
   m_Layer: 0
-  m_Name: Obj 3
+  m_Name: Obj 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -109,7 +110,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de5eed1b35fdd7e4c892f337692cb8ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  abilityType: 1
 --- !u!82 &3299251034245673557
 AudioSource:
   m_ObjectHideFlags: 0
@@ -206,3 +206,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1016126434271455230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7705459059265833474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20ab151ebf209c2469bf351455edbbe9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boostingTime: 3
+  boostingSpeed: 10
+  boostTimer: 0
+  isBoosting: 0
+  text: {fileID: 0}
