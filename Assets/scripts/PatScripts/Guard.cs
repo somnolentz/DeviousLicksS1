@@ -22,6 +22,8 @@ public class Guard : MonoBehaviour
     Vector3[] waypoints;
     int targetWaypointIndex = 1;
 
+	public CameraShake camerashake;
+
     void Start()
 	{
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -56,7 +58,7 @@ public class Guard : MonoBehaviour
 		{
 			spotlight.color = Color.red;
 			countdown.Deduct(5);
-			Debug.Log("is it working");
+			StartCoroutine(camerashake.Shake(.15f, .4f));
 
 
 
