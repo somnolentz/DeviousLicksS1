@@ -220,7 +220,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stunTime: 5
   stunTimer: 0
-  stunRadias: 100
+  stunRadias: 50
   mask:
     serializedVersion: 2
     m_Bits: 1024

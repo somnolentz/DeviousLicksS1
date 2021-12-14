@@ -9,17 +9,16 @@ public class Countdowntimer : MonoBehaviour
    public float currentTime = 0f;
     public float startingTime = 220f;
     public float timeLeft;
+    public Text countdownText;
+    public gamemanager gameManager;
+    public float TimeAdded = 15f;
 
     internal void AddTime()
     {
         throw new NotImplementedException();
     }
-
-    public Text countdownText;
-    public gamemanager gameManager;
-    public float TimeAdded = 15f;
-
-    void Start()
+       
+        void Start()
     {
        currentTime = startingTime;
     }
@@ -48,7 +47,7 @@ public class Countdowntimer : MonoBehaviour
 
    public void AddTime(float increase)
     {
-
+        increase = 15;
         currentTime += increase;
 
     }

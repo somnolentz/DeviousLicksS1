@@ -58,8 +58,9 @@ public class Guard : MonoBehaviour
 		{
 			spotlight.color = Color.red;
 			countdown.Deduct(5);
-			StartCoroutine(camerashake.Shake(.15f, .4f));
-
+			//StartCoroutine(camerashake.Shake(.15f, .4f));
+			transform.LookAt(player);
+			transform.position += transform.forward * speed * Time.deltaTime;
 
 
 

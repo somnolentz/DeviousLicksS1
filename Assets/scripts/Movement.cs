@@ -10,15 +10,10 @@ public class Movement : MonoBehaviour
     private RaycastHit hit;
     private Ray ray;
 
+    
+    public Collider[] groundColliders;
 
-
-    void Start()
-    {
-        cam = GameObject.Find("Main Camera").GetComponent<Camera>();
-        planecollider = GameObject.Find("Plane").GetComponent<Collider>();
-    }
-
-    // Update is called once per frame
+    
     void Update()
     {
         //transform.position = cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 5));

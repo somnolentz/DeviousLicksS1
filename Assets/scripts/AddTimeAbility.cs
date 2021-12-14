@@ -9,14 +9,7 @@ public class AddTimeAbility : MonoBehaviour, IAbility
     {
 
         countdowntimer.AddTime();
-        {
-            Debug.Log("deez");
-
-
-
-        }
-       
-
+              
 
 
     }
