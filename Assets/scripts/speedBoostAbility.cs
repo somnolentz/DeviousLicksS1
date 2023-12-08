@@ -18,7 +18,7 @@ public class speedBoostAbility : MonoBehaviour,IAbility
 
     void Start()
     {
-        text.SetActive(false);
+        //text.SetActive(false);
         rb = GetComponentInParent<Rigidbody>();
         player = GetComponentInParent<Thrust>();
     }
@@ -39,7 +39,7 @@ public class speedBoostAbility : MonoBehaviour,IAbility
     }
     public void Activate()
     {
-        text.SetActive(true);
+        //text.SetActive(true);
         intialSpeed = player.dash;
         player.dash = boostingSpeed;
         isBoosting = true;
